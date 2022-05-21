@@ -1,0 +1,84 @@
+{
+	"id": "55df3e7a-0b7c-dd55-9700-5a20368f1d47",
+	"name": "Inisev Test",
+	"description": "",
+	"order": [
+		"1b280fd7-3b9f-3715-0b17-c1c563f162ef",
+		"a095e61c-14fa-f4fb-9dfa-01d4fb353989"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1653131141538,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1b280fd7-3b9f-3715-0b17-c1c563f162ef",
+			"headers": "Accept: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/websites/1/posts",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "55df3e7a-0b7c-dd55-9700-5a20368f1d47",
+			"data": [
+				{
+					"key": "title",
+					"value": "Post 2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "Testing description for post 2",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Create Post",
+			"description": "You can create a Post with this API. As a post belong to a website so you need to add the website Id in the parameter.",
+			"descriptionFormat": "html",
+			"time": 1653131220282,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a095e61c-14fa-f4fb-9dfa-01d4fb353989",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/user/1/website/2",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "55df3e7a-0b7c-dd55-9700-5a20368f1d47",
+			"data": null,
+			"dataMode": "params",
+			"name": "User Subscribe To Website",
+			"description": "This API is for subscribing a user to the website. As many users can subscripted to many websites. For making this work you have to pass user id and website id in the url.",
+			"descriptionFormat": "html",
+			"time": 1653131364190,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
